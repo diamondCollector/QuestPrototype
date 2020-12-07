@@ -12,11 +12,6 @@ public class QuestGiver : MonoBehaviour
         quest.onStart();
     }
 
-    protected virtual void UpdateQuest(int questIndex)
-    {
-        questsToGive[questIndex].onUpdated();
-    }
-
     protected virtual void UpdateQuest(Quest quest)
     {
         quest.onUpdated();
